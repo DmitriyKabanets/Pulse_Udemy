@@ -109,6 +109,27 @@ body{
     }
 }
 
+.consultation{
+    background: url(../img/consultation_bg.jpg) center (center/cover) no-repeat;
+    padding: 105px 0;
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    &__descr{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-top: 10px;
+    } 
+}
+
 @import '_header.scss';
 @import '_button.scss';
+@import '_forms';
+
 @import '_media.scss';

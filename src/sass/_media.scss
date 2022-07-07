@@ -57,10 +57,10 @@
 }
 
 @media (max-width: 575px){
+    .container{
+        padding: 0 15px;
+    }
     .promo{
-        .container{
-            padding: 0 15px;
-        }
         &__header{
             text-align: center;
             font-size: 35px;
@@ -81,6 +81,30 @@
         &__header{
             font-size: 25px;
         }
+    }
+
+    .consultation{
+        &__title{
+            font-size: 26px;
+            text-align: center;
+        }
+        &__descr{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .forms{
+        margin: 30px auto 0;
+        width: 230px;
+    }
+
+    .button_forms{
+        width: 230px;
+    }
+
+    .button_promo{
+        width: 230px;
     }
   
 }
