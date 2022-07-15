@@ -54,6 +54,18 @@
             margin-top: 5px;
         }
     }
+    .catalog{
+        &__title{
+            font-size: 25px;
+        }
+        &__tabs{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__tab{
+            margin-bottom: 10px;
+        }
+    }
 }
 
 @media (max-width: 575px){
