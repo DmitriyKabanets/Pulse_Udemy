@@ -38,4 +38,21 @@ $(document).ready(function(){
     toggleSlide('.catalog__item-link');
     toggleSlide('.catalog__item-back');
 
+    //modal
+
+    $('[data-modal=consult]').on('click', function() {
+        $('.layer-modal, #consult').fadeIn('fast');
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.layer-modal, #consult, #answer, #order').fadeOut('fast');
+    });
+
+    $('.button_catalog').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__text').text($('.catalog__item-title').eq(i).text());
+            $('.layer-modal, #order').fadeIn('fast');
+        });
+    });
+
   });
