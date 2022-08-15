@@ -8,7 +8,7 @@ const rename = require("gulp-rename");
 gulp.task('server', function() {
   
     browserSync({
-        host: "192.168.0.132",
+        host: "192.168.0.133",
         server: {
             baseDir: "src"
         }

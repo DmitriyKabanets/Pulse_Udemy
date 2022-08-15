@@ -91,4 +91,21 @@ $(document).ready(function(){
 
     $("input[name=phone]").mask("+380(99) 999-9999");
 
+
+    // Smooth scroll and pageup
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 800){
+            $('.pageup').fadeIn();
+        } else{
+            $('.pageup').fadeOut();
+        }
+    })
+
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
   });
