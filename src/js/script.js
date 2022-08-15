@@ -55,4 +55,40 @@ $(document).ready(function(){
         });
     });
 
+    //validation forms
+
+    function validationForm (form){
+        $(form).validate({
+            rules:{
+                name: {
+                    minlength: 2,
+                    required: true,
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages:{
+                name:{
+                    required: "Введіть Ваше ім'я",
+                    minlength: jQuery.validator.format("Потрібно як мінімум {0} символи!")
+                },
+                phone: "Введіть Ваш номер телефону",
+                email: {
+                    required: "Введіть Ваш почтовик",
+                    email: "Не корректна адреса почтовика"
+                  }
+    
+            }
+        });
+    }
+
+    validationForm('#consult form');
+    validationForm('#order form');
+    validationForm('#con-form');
+
+    $("input[name=phone]").mask("+380(99) 999-9999");
+
   });

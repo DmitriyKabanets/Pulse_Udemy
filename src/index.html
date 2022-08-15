@@ -101,10 +101,10 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
 
-            <form action="" class="forms">
-                <input required name="name" placeholder="Ваше имя" type="text">
-                <input required name="phone" placeholder="Ваш телефон" type="tel">
-                <input required name="email" placeholder="Ваш email" type="email">
+            <form action="" class="forms" id="con-form">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон" type="tel">
+                <input name="email" placeholder="Ваш email" type="email">
 
                 <!-- <input type="submit" value="Заказать консультацию" name=""> -->
                 <button class="button button_forms">заказать консультацию</button>
@@ -497,9 +497,9 @@
             <div class="modal__title">Просто заполните форму заявки</div>
             <div class="modal__text">и мы перезвоним вам в течении 10 минут</div>
             <form action="#" class="modal__form">
-                <input required type="text" placeholder="Ваше имя">
-                <input required type="tel" placeholder="Ваш телефон">
-                <input required type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" type="tel" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="modal__form-button">заказать консультацию</button>
             </form>
         </div>
@@ -509,9 +509,9 @@
             <div class="modal__title">Ваш заказ:</div>
             <div class="modal__text">Пульсометр Polar FT1</div>
             <form action="#" class="modal__form">
-                <input required type="text" placeholder="Ваше имя">
-                <input required type="tel" placeholder="Ваш телефон">
-                <input required type="email" placeholder="Ваш E-mail">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" type="tel" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="modal__form-button">купить</button>
             </form>
         </div>
@@ -526,6 +526,8 @@
     <script type="text/javascript" src="https:code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https:code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
